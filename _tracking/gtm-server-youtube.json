@@ -1,0 +1,210 @@
+{
+  "exportFormatVersion": 2,
+  "containerVersion": {
+    "accountId": "0",
+    "containerId": "2",
+    "container": {
+      "accountId": "0",
+      "containerId": "2",
+      "name": "Youtube",
+      "publicId": "GTM-YYYYYYY",
+      "usageContext": [
+        "SERVER"
+      ]
+    },
+    "tag": [
+      {
+        "accountId": "0",
+        "containerId": "2",
+        "tagId": "6",
+        "name": "GA4 - todos os eventos",
+        "type": "sgtmgaaw",
+        "firingTriggerId": [
+          "4"
+        ],
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "measurementId",
+            "value": "{{GA4 Measurement ID}}"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "redactVisitorIp",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "accountId": "0",
+        "containerId": "2",
+        "tagId": "7",
+        "name": "Google Ads - purchase",
+        "type": "sgtmawct",
+        "firingTriggerId": [
+          "5"
+        ],
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "conversionId",
+            "value": "{{Google Ads Conversion ID}}"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "conversionLabel",
+            "value": "{{Google Ads Label - purchase}}"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "conversionValue",
+            "value": "{{Event Data - value}}"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "currencyCode",
+            "value": "USD"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "transactionId",
+            "value": "{{Event Data - transaction_id}}"
+          }
+        ]
+      }
+    ],
+    "trigger": [
+      {
+        "accountId": "0",
+        "containerId": "2",
+        "triggerId": "4",
+        "name": "All Events",
+        "type": "ALWAYS"
+      },
+      {
+        "accountId": "0",
+        "containerId": "2",
+        "triggerId": "5",
+        "name": "CE - purchase",
+        "type": "CUSTOM_EVENT",
+        "customEventFilter": [
+          {
+            "type": "EQUALS",
+            "parameter": [
+              {
+                "type": "TEMPLATE",
+                "key": "arg0",
+                "value": "{{_event}}"
+              },
+              {
+                "type": "TEMPLATE",
+                "key": "arg1",
+                "value": "purchase"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "variable": [
+      {
+        "accountId": "0",
+        "containerId": "2",
+        "variableId": "1",
+        "name": "GA4 Measurement ID",
+        "type": "c",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "value",
+            "value": "G-XXXXXXXXXX"
+          }
+        ]
+      },
+      {
+        "accountId": "0",
+        "containerId": "2",
+        "variableId": "2",
+        "name": "Google Ads Conversion ID",
+        "type": "c",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "value",
+            "value": "AW-17677671261"
+          }
+        ]
+      },
+      {
+        "accountId": "0",
+        "containerId": "2",
+        "variableId": "3",
+        "name": "Google Ads Label - purchase",
+        "type": "c",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "value",
+            "value": "COLE_O_LABEL_AQUI"
+          }
+        ]
+      },
+      {
+        "accountId": "0",
+        "containerId": "2",
+        "variableId": "8",
+        "name": "Event Data - value",
+        "type": "ed",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "keyPath",
+            "value": "value"
+          }
+        ]
+      },
+      {
+        "accountId": "0",
+        "containerId": "2",
+        "variableId": "9",
+        "name": "Event Data - transaction_id",
+        "type": "ed",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "keyPath",
+            "value": "transaction_id"
+          }
+        ]
+      },
+      {
+        "accountId": "0",
+        "containerId": "2",
+        "variableId": "10",
+        "name": "Event Data - gclid",
+        "type": "ed",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "keyPath",
+            "value": "gclid"
+          }
+        ]
+      },
+      {
+        "accountId": "0",
+        "containerId": "2",
+        "variableId": "11",
+        "name": "Event Data - client_id",
+        "type": "ed",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "keyPath",
+            "value": "client_id"
+          }
+        ]
+      }
+    ]
+  }
+}
