@@ -1,0 +1,24 @@
+<svg width="240" height="60" viewBox="0 0 240 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Leaf/Growth Icon representing health and growth -->
+  <g id="icon">
+    <circle cx="30" cy="30" r="22" fill="#2d5f4f" opacity="0.1"/>
+    <path d="M30 15 C25 15, 20 20, 20 25 C20 30, 22 32, 25 35 C28 38, 30 40, 30 45 C30 40, 32 38, 35 35 C38 32, 40 30, 40 25 C40 20, 35 15, 30 15 Z" fill="#2d5f4f"/>
+    <path d="M30 20 C28 20, 26 22, 26 24 C26 26, 27 27, 28.5 29 C29.5 30.5, 30 32, 30 34 C30 32, 30.5 30.5, 31.5 29 C33 27, 34 26, 34 24 C34 22, 32 20, 30 20 Z" fill="#4a8070"/>
+    <ellipse cx="30" cy="30" rx="28" ry="28" stroke="#2d5f4f" stroke-width="2" fill="none"/>
+  </g>
+  
+  <!-- Text: Healthy Habit Academy -->
+  <g id="text" transform="translate(65, 0)">
+    <!-- Healthy Habit -->
+    <text x="0" y="25" font-family="Crimson Pro, serif" font-size="20" font-weight="700" fill="#1a1a1a">
+      Healthy Habit
+    </text>
+    <!-- Academy -->
+    <text x="0" y="45" font-family="DM Sans, sans-serif" font-size="14" font-weight="500" fill="#4a4a4a" letter-spacing="2">
+      ACADEMY
+    </text>
+  </g>
+  
+  <!-- Decorative element -->
+  <line x1="65" y1="31" x2="170" y2="31" stroke="#d4a574" stroke-width="1.5"/>
+</svg>

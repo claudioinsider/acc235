@@ -1,0 +1,10 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle -->
+  <circle cx="16" cy="16" r="16" fill="#2d5f4f"/>
+  
+  <!-- Leaf/Growth Icon -->
+  <path d="M16 8 C13 8, 10 11, 10 14 C10 17, 11.5 18.5, 13.5 21 C15 23, 16 24, 16 27 C16 24, 17 23, 18.5 21 C20.5 18.5, 22 17, 22 14 C22 11, 19 8, 16 8 Z" fill="white"/>
+  
+  <!-- Inner leaf detail -->
+  <path d="M16 11 C14.5 11, 13 12.5, 13 14 C13 15.5, 14 16.5, 15 18 C15.5 19, 16 20, 16 21.5 C16 20, 16.5 19, 17 18 C18 16.5, 19 15.5, 19 14 C19 12.5, 17.5 11, 16 11 Z" fill="#d4a574"/>
+</svg>
